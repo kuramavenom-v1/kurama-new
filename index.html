@@ -3,53 +3,146 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>قيادات - Kurama</title>
+    <title>Organization-#kurama..𖤐</title>
     <style>
-        body { font-family: 'Tahoma', sans-serif; background-color: #0A0A0A; color: #E0E0E0; margin: 0; padding: 0; }
-        .container { max-width: 450px; margin: 0 auto; padding: 15px; text-align: center; }
-        .ranks-section { padding: 40px 0; background-color: #151515; min-height: 100vh; }
-        .rank-card { background-color: #1A1A1A; border-radius: 15px; margin: 0 auto 30px auto; box-shadow: 0 0 25px rgba(255, 215, 0, 0.4); border: 2px solid #FFD700; overflow: hidden; width: 100%; }
-        .image-container { width: 100%; aspect-ratio: 1 / 1; overflow: hidden; background-color: #000; }
-        .rank-card img { width: 100%; height: 100%; object-fit: cover; display: block; }
-        .rank-content-text { padding: 25px; background: #1A1A1A; border-top: 2px solid #FFD700; }
-        .rank-card .name { color: #FFD700; font-size: 2.5em; margin: 10px 0; font-weight: bold; }
-        
-        /* ستايل النائب */
-        .vampire-card { border-color: #C0C0C0; box-shadow: 0 0 20px rgba(192, 192, 192, 0.3); }
-        .vampire-card .name { color: #C0C0C0; }
-        .vampire-card .rank-content-text { border-top: 2px solid #C0C0C0; }
-        
-        /* ستايل المستشار */
-        .kaneki-card { border-color: #8B0000; box-shadow: 0 0 20px rgba(139, 0, 0, 0.5); }
-        .kaneki-card .name { color: #FF0000; text-shadow: 0 0 10px rgba(255, 0, 0, 0.5); }
-        .kaneki-card .rank-content-text { border-top: 2px solid #8B0000; }
+        /* أنماط أساسية */
+        body {
+            font-family: 'Tahoma', 'Arial', sans-serif;
+            background-color: #0A0A0A;
+            color: #E0E0E0;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+        }
 
-        .back-button { display: inline-block; margin-bottom: 20px; padding: 10px 25px; color: #FFD700; text-decoration: none; border: 1px solid #FFD700; border-radius: 20px; }
+        /* تنسيق قسم الترحيب والفوائد (الصفحة الرئيسية) */
+        .main-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            min-height: 100vh; 
+            justify-content: center;
+            padding-bottom: 50px;
+        }
+
+        .main-content h1 {
+            color: #FFD700;
+            font-size: 3.5em;
+            margin-bottom: 5px;
+            text-shadow: 0 0 15px #FFD700B3;
+            border-bottom: 2px solid #FFD70033;
+            padding-bottom: 10px;
+        }
+
+        .main-content h2 {
+            color: #E0E0E0;
+            font-size: 1.8em;
+            margin-top: 30px;
+            margin-bottom: 15px;
+        }
+
+        .benefits-list {
+            list-style: none;
+            padding: 0;
+            width: 100%;
+            max-width: 550px;
+            margin-top: 20px;
+        }
+        .benefits-list li {
+            background-color: #1A1A1A;
+            padding: 18px;
+            margin-bottom: 12px;
+            border-right: 5px solid #FFD700;
+            border-radius: 8px;
+            font-size: 1.15em;
+            color: #B8B8B8;
+            text-align: right;
+            transition: background-color 0.3s;
+        }
+        .benefits-list li:hover {
+            background-color: #2A2A2A;
+        }
+
+        .highlight {
+            color: #FFD700;
+            font-weight: bold;
+        }
+
+        .warning-box {
+            background-color: #331A1A;
+            color: #FF5555;
+            padding: 15px;
+            margin-top: 40px;
+            border: 2px solid #FF0000;
+            border-radius: 8px;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        
+        /* الزر الجديد يوجه لصفحة الرتب */
+        .page-button {
+            display: inline-block;
+            margin-top: 40px;
+            padding: 12px 25px;
+            background-color: #FFD700;
+            color: #0A0A0A;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            border-radius: 50px;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .page-button:hover {
+            background-color: #FFE56B;
+            transform: scale(1.05);
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px 0;
+            color: #5C5C5C;
+            font-size: 0.85em;
+            border-top: 1px solid #333;
+            margin-top: 0;
+        }
     </style>
 </head>
 <body>
     <div class="container">
-        <a href="index.html" class="back-button">← العودة للرئيسية</a>
-        <section class="ranks-section">
-            <h2 style="color: #FFD700; margin-bottom: 30px;">رتب كوروما؟</h2>
-            
-            <div class="rank-card">
-                <div class="image-container"><img src="./images/v_king_final.jpg"></div>
-                <div class="rank-content-text">
-                    <div style="color:#AAA">الـمـؤسـس</div>
-                    <div class="name">VENoM</div>
-                </div>
-            </div>
+        <section class="main-content">
+            <h1>#kurama..𖤐</h1>
+            <p style="font-size: 1.5em; color: #E0E0E0;">أهلًا وسهلًا بكم</p>
 
-            <div class="rank-card vampire-card">
-                <div class="image-container"><img src="./images/vampire_rank.jpg"></div>
-                <div class="rank-content-text">
-                    <div style="color:#AAA">نائب الـمـؤسـس</div>
-                    <div class="name">FLOxAN</div>
-                </div>
+            <h2>عن المنظمة</h2>
+            <p class="highlight">『وش فايدة منظمه كوروما؟』</p>
+
+            <ul class="benefits-list">
+                <li>تجمع <span class="highlight">نخبة المبرمجين والمخربين</span>.</li>
+                <li>قدح - تسطير - تبنبد - زرف.</li>
+                <li>بوتات وسكريبتات <span class="highlight">عالية الجودة</span>.</li>
+                <li>ثغرات و سيرفرات.</li>
+                <li>أكثر من 13 فرع متنوع: الشير، الصحافة، المسابقات، الستيكرز، البرمجة، الألعاب، وأكثر من <span class="highlight">200+ نشاط وفرع.</span></li>
+            </ul>
+
+            <div class="warning-box">
+                ملاحظة هامة: إذا جيت تهايط أو تقدح —  بننكحمك
             </div>
-                    
+            
+            <a href="ranks.html" class="page-button">اطلع على القيادات ↓</a>
+
         </section>
+        
     </div>
+    
+    <footer>
+        © مدري بس فحلك فينوم هو ال مسوي الموقع 🆙
+    </footer>
 </body>
 </html>
+<style>
